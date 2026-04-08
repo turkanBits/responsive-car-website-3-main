@@ -275,7 +275,28 @@ background-color: var(--black-color);
   margin-bottom: .25rem;
 }
 
+.home__tittle{
+  font-size: var(--big-font-size);
+  font-weight:var(--font-extra-bold) ;
+  letter-spacing: 2px;
+  color: var(--white-color);
+}
 
+.home__button{
+  position: absolute;
+  bottom: 5rem;
+  justify-self: center;
+  color: var(--white-color);
+  width: 94px;
+  height: 94px;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-top: 1rem;
+  z-index: 5;
+}
 
 /* Swiper class */
 

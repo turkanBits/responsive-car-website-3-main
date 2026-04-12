@@ -354,7 +354,14 @@ background-color: var(--black-color);
 
 
 /*=============== ABOUT ===============*/
+.about{
+  background-color: var(--body-second-color);  
+}
 
+.about__container{
+  padding-bottom: 3rem;
+  row-gap:3rem;
+}
 
 /*=============== MODELS ===============*/
 

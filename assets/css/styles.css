@@ -343,6 +343,9 @@ background-color: var(--black-color);
   transition: color .4s;
 }
 
+.swiper-pagination-bullet-active{
+  color:var(--black-color);
+}
 
 /*=============== BUTTON ===============*/
 

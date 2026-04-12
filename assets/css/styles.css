@@ -374,6 +374,12 @@ background-color: var(--black-color);
   transform: translateX(.5rem);
 }
 
+.button__ghost{
+  background-color: transparent;
+  box-shadow:none;
+  border: 2px solid var(--white-color);
+}
+
 /*=============== ABOUT ===============*/
 .about{
   background-color: var(--body-second-color);  

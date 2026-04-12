@@ -322,7 +322,7 @@ background-color: var(--black-color);
   margin-bottom: 1rem;
 }
 
-.swipper-pagination{
+.swiper-pagination{
   position: absolute;
   bottom: 20px;
 }
@@ -333,6 +333,16 @@ background-color: var(--black-color);
    justify-content: center;
    column-gap: 1.5rem;
 }
+
+.swiper-pagination-bullet{
+  color:var(--white-color);
+  opacity: 1;
+  background: none;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
 
 /*=============== BUTTON ===============*/
 

@@ -157,7 +157,7 @@ video {
 
 .nav{
   position: relative;
-  height: var(-header-height);
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,7 +257,7 @@ background-color: var(--black-color);
 }
 
 .home__gradient{
-  background-color: linear-gradient(180deg,hsla(25,70%,55%,0) 80%,
+  background: linear-gradient(180deg,hsla(25,70%,55%,0) 80%,
                                             hsla(25,70%,55%)100%);
 }
 
@@ -275,7 +275,7 @@ background-color: var(--black-color);
   margin-bottom: .25rem;
 }
 
-.home__tittle{
+.home__title{
   font-size: var(--big-font-size);
   font-weight:var(--font-extra-bold) ;
   letter-spacing: 2px;
@@ -298,8 +298,41 @@ background-color: var(--black-color);
   z-index: 5;
 }
 
-/* Swiper class */
+.home__button span{
+  font-weight:var(--font-semi-bold) ;
+}
 
+.home__button i{
+  font-size:1.5rem;
+}
+
+.home__swiper{
+  position: relative;
+}
+
+.home__img{
+  width: 300px;
+  margin-inline:auto;
+}
+
+/* Swiper class */
+.swiper{
+  margin-inline:initial;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.swipper-pagination{
+  position: absolute;
+  bottom: 20px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+   height: max-content;
+   display: flex;
+   justify-content: center;
+   column-gap: 1.5rem;
+}
 
 /*=============== BUTTON ===============*/
 

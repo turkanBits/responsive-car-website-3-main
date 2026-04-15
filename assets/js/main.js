@@ -44,19 +44,37 @@ const swiperHome = new Swiper('.home__swiper', {
 });
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-const bgHeader = () => {
-  const header = document.getElementById('header')
-  // Add a class if the bottom offset is greater than 50 of the viewport
-  this.scrollY >= 50 ? header.classList.add('bg-header')
-                     : header.classList.remove('bg-header')
+const scrollUp= () => {
+  const scrollUp = document.getElementById('scroll-up')
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                     : scrollUp.classList.remove('show-scroll')
 }
 
-window.addEventListener('scroll', bgHeader)
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
 
+const scrollActive = () =>{
+  const scrollDown = window.scrollY
+
+  sections.forEach(current =>{
+    const sectionHeight = current.offsetHeight,
+          sectionTop = current.offsetTop - 58,
+          sectionId = current.getAttribute('id'),
+          sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+    if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+      sectionsClass.classList.add('active-link')
+    }else{
+      sectionsClass.classList.remove('active-link')
+    }
+  })
+}
+
+window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
